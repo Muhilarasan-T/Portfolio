@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { X, Download, ExternalLink, FileText } from 'lucide-react';
+import qrCodeImg from '../assets/portfolio_qr.png';
 
 interface ResumeModalProps {
   isOpen: boolean;
@@ -7,6 +8,7 @@ interface ResumeModalProps {
 }
 
 export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => {
+  const resumePdfUrl = `${import.meta.env.BASE_URL}Muhilarasan_T_Resume.pdf`;
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
@@ -46,7 +48,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
           <div className="flex items-center gap-2">
             <a
-              href="/Muhilarasan_T_Resume.pdf"
+              href={resumePdfUrl}
               download="Muhilarasan_T_Resume.pdf"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 shadow-sm transition-colors"
             >
@@ -56,7 +58,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             </a>
 
             <a
-              href="/Muhilarasan_T_Resume.pdf"
+              href={resumePdfUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-colors"
@@ -91,7 +93,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               </p>
             </div>
             <div className="flex flex-col items-center shrink-0">
-              <img src="/portfolio_qr.png" alt="Portfolio QR Code" className="w-16 h-16 border border-slate-200 rounded p-0.5" />
+              <img src={qrCodeImg} alt="Portfolio QR Code" className="w-16 h-16 border border-slate-200 rounded p-0.5" />
               <span className="text-[10px] text-slate-500 font-mono mt-0.5">Live Portfolio</span>
             </div>
           </div>
@@ -246,7 +248,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
             Verified with Muhilarasan T&rsquo;s actual credentials
           </span>
           <a
-            href="/Muhilarasan_T_Resume.pdf"
+            href={resumePdfUrl}
             download="Muhilarasan_T_Resume.pdf"
             className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 transition-colors shadow-md shadow-blue-600/30"
           >

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ArrowDown, FileText, MapPin, Award } from 'lucide-react';
 import { DataScienceCanvas } from './DataScienceCanvas';
 import { contactInfo } from '../data/portfolioData';
+import profilePhoto from '../assets/profile.jpg';
 
 interface HeroProps {
   onOpenResume: () => void;
@@ -35,24 +36,15 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
           <div className="relative w-32 h-32 sm:w-36 sm:h-36 rounded-full overflow-hidden border-2 border-slate-700/80 bg-slate-900 shadow-2xl flex items-center justify-center">
             {!imageError ? (
               <img
-                src="/profile.jpg"
+                src={profilePhoto}
                 alt={contactInfo.name}
-                onError={() => {
-                  const img = new Image();
-                  img.src = '/profile.png';
-                  img.onload = () => {
-                    const el = document.getElementById('hero-profile-img') as HTMLImageElement;
-                    if (el) el.src = '/profile.png';
-                  };
-                  img.onerror = () => setImageError(true);
-                }}
-                id="hero-profile-img"
+                onError={() => setImageError(true)}
                 className="w-full h-full object-cover [object-position:50%_15%] transition-transform duration-300 group-hover:scale-105"
               />
             ) : (
               <div className="w-full h-full bg-gradient-to-br from-blue-900/60 to-indigo-950 flex flex-col items-center justify-center text-blue-300">
                 <span className="text-2xl sm:text-3xl font-extrabold tracking-wider">MT</span>
-                <span className="text-[10px] font-mono text-slate-400 mt-0.5">Photo</span>
+                <span className="text-[10px] font-mono text-slate-400 mt-0.5">Muhilarasan T</span>
               </div>
             )}
           </div>
