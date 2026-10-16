@@ -27,7 +27,7 @@ if (fs.existsSync(qrPath)) {
 doc.font('Helvetica-Bold').fontSize(18).fillColor('#0f172a').text('MUHILARASAN T', 36, 26, { align: 'left' });
 doc.moveDown(0.2);
 doc.font('Helvetica').fontSize(8.5).fillColor('#475569').text('Bengaluru, Karnataka, India  |  +91 9342596554  |  muhiltamilarasan2k5@gmail.com', { align: 'left' });
-doc.text('GitHub: github.com/Muhilarasan-T  |  LinkedIn: linkedin.com/in/Muhilarasan-T  |  Portfolio: muhilarasan-t.github.io', { align: 'left' });
+doc.text('GitHub: github.com/Muhilarasan-T  |  LinkedIn: linkedin.com/in/Muhilarasan-T  |  Portfolio: muhilarasan-t.github.io/Portfolio', { align: 'left' });
 doc.moveDown(0.8);
 
 function addSectionTitle(title) {

@@ -11,8 +11,8 @@ if (!fs.existsSync(publicDir)) {
   fs.mkdirSync(publicDir, { recursive: true });
 }
 
-// Target URL - can be overridden via command line: node scripts/generate-qr.js https://my-url.com
-const targetUrl = process.argv[2] || 'https://muhilarasan-t.github.io/';
+// Target URL - points to the actual live portfolio repository on GitHub Pages
+const targetUrl = process.argv[2] || 'https://muhilarasan-t.github.io/Portfolio/';
 
 console.log(`Generating QR code for: ${targetUrl}`);
 
