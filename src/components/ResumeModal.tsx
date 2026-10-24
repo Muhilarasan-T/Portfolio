@@ -175,6 +175,51 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                   <li>Optimized the classification threshold to reduce false-positive alerts and deployed FastAPI real-time and batch scoring with SHAP-based explainability.</li>
                 </ul>
               </div>
+
+              {/* Project 4 */}
+              <div>
+                <div className="font-bold text-slate-900">
+                  CredX — Loan Risk & Repayment Analytics Platform
+                </div>
+                <div className="text-[11px] text-slate-500 italic">
+                  Python | MySQL 8.0 Star Schema | Power BI | DAX | Pandas | SQL
+                </div>
+                <ul className="list-disc list-inside text-xs text-slate-700 mt-1 space-y-0.5">
+                  <li>Audited and modeled 39,717 loan contracts ($434.8M funded capital) into a normalized Kimball Star Schema on MySQL 8.0.</li>
+                  <li>Authored 8 advanced SQL analytical modules evaluating default hazard curves, credit grade risk stratification, and recovery rates.</li>
+                  <li>Constructed an interactive Power BI dashboard with 25+ DAX measures visualizing cash flow yields and delinquency drivers.</li>
+                </ul>
+              </div>
+
+              {/* Project 5 */}
+              <div>
+                <div className="font-bold text-slate-900">
+                  PULSE — Hospital Patient Flow & Clinical Throughput Analytics
+                </div>
+                <div className="text-[11px] text-slate-500 italic">
+                  SQL | Microsoft Excel 365 | Power Query | Power Pivot | Queue Modeling
+                </div>
+                <ul className="list-disc list-inside text-xs text-slate-700 mt-1 space-y-0.5">
+                  <li>Analyzed 49,912 outpatient EHR records over 24 months to diagnose clinical queue latency and surge bottlenecks.</li>
+                  <li>Uncovered twin-peak arrival surges absorbing 63.9% of visits and diagnosed severe workload skew across 98 attending physicians.</li>
+                  <li>Modeled evidence-based 3-tier staggered shifts compressing median wait times by 33.3% and unlocking +14.3% clinical throughput.</li>
+                </ul>
+              </div>
+
+              {/* Project 6 */}
+              <div>
+                <div className="font-bold text-slate-900">
+                  PAYFLOW — Digital Payments Intelligence & Trends Analysis
+                </div>
+                <div className="text-[11px] text-slate-500 italic">
+                  Python | MySQL 8.0 | Pandas | NumPy | Pytest | Microsoft Excel | Seaborn
+                </div>
+                <ul className="list-disc list-inside text-xs text-slate-700 mt-1 space-y-0.5">
+                  <li>Ingested 81 continuous months of official RBI payment indicators across 57 payment rails and 13 infrastructure indicators.</li>
+                  <li>Constructed normalized MySQL Star Schema tables, Parquet columnar stores, and an automated 21-test pytest validation suite.</li>
+                  <li>Quantified macroeconomic structural shifts: parabolic UPI adoption, debit vs credit card divergence, and CTS cheque phase-out.</li>
+                </ul>
+              </div>
             </div>
           </div>
 

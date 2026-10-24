@@ -3,7 +3,7 @@ export interface Project {
   name: string;
   title: string;
   tagline: string;
-  category: 'Machine Learning' | 'MLOps & APIs' | 'Location Intelligence' | 'NLP';
+  category: 'Machine Learning' | 'MLOps & APIs' | 'Location Intelligence' | 'NLP' | 'Data Analytics & BI';
   problem: string;
   solution: string;
   keyHighlights: string[];

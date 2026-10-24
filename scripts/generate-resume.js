@@ -93,7 +93,17 @@ doc.font('Helvetica').fontSize(8.2).fillColor('#334155');
 doc.text('• Developed an end-to-end fraud detection platform for 1.85M transactions using a strict chronological train-validation-test strategy to prevent temporal leakage.');
 doc.text('• Engineered 26 point-in-time-safe features and trained an XGBoost classifier, achieving 0.91 PR-AUC on an unseen test set.');
 doc.text('• Optimized the classification threshold to reduce false-positive alerts and deployed FastAPI real-time and batch scoring with SHAP-based explainability.');
-doc.moveDown(0.6);
+doc.moveDown(0.5);
+
+// Project 4
+doc.font('Helvetica-Bold').fontSize(9).fillColor('#0f172a').text('CredX — Loan Risk & Repayment Analytics Platform');
+doc.font('Helvetica-Oblique').fontSize(8).fillColor('#64748b').text('Python | MySQL 8.0 Star Schema | Power BI | DAX | SQL');
+doc.moveDown(0.2);
+doc.font('Helvetica').fontSize(8.2).fillColor('#334155');
+doc.text('• Modeled 39,717 loan contracts ($434.8M capital) into a normalized Kimball Star Schema on MySQL 8.0.');
+doc.text('• Developed 8 advanced SQL analytical modules evaluating default hazard curves, credit grade risk stratification, and recovery rates.');
+doc.text('• Constructed an interactive Power BI dashboard with 25+ DAX measures visualizing cash flow yields and delinquency drivers.');
+doc.moveDown(0.5);
 
 // Experience
 addSectionTitle('Experience');
